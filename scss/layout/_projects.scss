@@ -1,0 +1,42 @@
+@use './abstracts/index.scss';
+
+.projects{
+
+    h2{
+        @include index.center;
+        font-size: 2em;
+        @include index.mobile{
+            font-size:1.5em;
+        }
+
+
+    }
+    .collection{
+    @include  index.align(center,row);
+    gap: 2em;
+    flex-wrap: wrap;
+
+    .pages{
+        @include index.align(center,row);
+        gap:2em;
+        @include index.mobile{
+            padding: 0;
+            flex-wrap: wrap;
+            .left,.right{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+        img{
+            width: 100%;
+        }
+        .left,.right{
+            width: 50%;
+        }
+
+    }
+    }
+}

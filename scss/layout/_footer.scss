@@ -1,0 +1,12 @@
+@use './abstracts/index.scss';
+.footer{
+ @include index.center;
+ 
+ img{
+    margin: 1em;
+    &:hover{
+        transition: all .2s ease-in-out;
+        scale: 1.5;
+    }
+ }
+}

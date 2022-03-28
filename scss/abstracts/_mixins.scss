@@ -1,0 +1,45 @@
+@use 'variables.scss' as v;
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin align($align,$direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $align;
+}
+@mixin anchorStyle{
+    text-decoration: none;
+    color: #222;
+    @include mobile{
+        color:azure;
+    }
+}
+
+@mixin container{
+    position: relative;
+    display:block;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: fill;
+    @include mobile{
+        max-width: 400px;
+    }
+}
+
+@mixin mobile{
+    @media(max-width:600px){
+        @content;
+    }
+}
+@mixin text{
+    font-size: 2em;
+    color: white;
+    @include align(flex-start,row);
+    @include mobile{
+        font-size:1.4em;
+    }
+}

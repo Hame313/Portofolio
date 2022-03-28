@@ -1,0 +1,38 @@
+@use "abstracts/index.scss";
+.menu-btn {
+  display: none;
+  @include index.mobile {
+  @include index.align(flex-end, row);
+  }
+}
+
+.nav {
+@include index.align(flex-end, row);
+
+.menu-nav {
+    @include index.align(center, row);
+
+    .menu-nav__item {
+    &:hover {
+        background-color: lighten(#3e538f, 40);
+    }
+    }
+    .menu-nav__link {
+    @include index.anchorStyle;
+    }
+}
+
+  @include index.mobile {
+    .menu-nav {
+      display: none;
+    }
+    .show {
+      @include index.align(flex-start, column);
+      position: absolute;
+      top: 7%;
+      right: 0%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
