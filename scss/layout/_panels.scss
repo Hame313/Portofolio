@@ -5,16 +5,12 @@
   will-change: transform, opacity;
 }
 .wrapper{
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
+
 .ender {
-   
-  overscroll-behavior: none;
+   overflow-x: hidden;
   width: 600%;
-  
   display: flex;
   flex-wrap: nowrap;
   @include index.mobile{
@@ -22,12 +18,15 @@
   }
  
 }
+.proxy {
+  position: absolute;
+  visibility: hidden;
+}
 .panel {
-  will-change: transform;
   height: 100vh;
   width: 100vw;
    @include index.mobile{
-      width: 500px;
+     
   }
 }
 .pink{

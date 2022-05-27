@@ -1890,14 +1890,11 @@ footer img:hover {
 }
 
 .wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 100%;
   overflow-x: hidden;
 }
 
 .ender {
-  overscroll-behavior: none;
+  overflow-x: hidden;
   width: 600%;
   display: flex;
   flex-wrap: nowrap;
@@ -1908,17 +1905,15 @@ footer img:hover {
   }
 }
 
+.proxy {
+  position: absolute;
+  visibility: hidden;
+}
+
 .panel {
-  will-change: transform;
   height: 100vh;
   width: 100vw;
 }
-@media (max-width: 600px) {
-  .panel {
-    width: 500px;
-  }
-}
-
 .pink {
   display: flex;
   flex-direction: column;
