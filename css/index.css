@@ -106,6 +106,10 @@ body {
   line-height: 1;
   overscroll-behavior: none;
   overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-family: "Kanit", sans-serif;
   font-family: "Martel Sans", sans-serif;
@@ -1829,9 +1833,14 @@ footer img:hover {
 
 .ender {
   overscroll-behavior: none;
-  width: 400%;
+  width: 500%;
   display: flex;
   flex-wrap: nowrap;
+}
+@media (max-width: 600px) {
+  .ender {
+    width: 600%;
+  }
 }
 
 .panel {
@@ -1840,7 +1849,7 @@ footer img:hover {
 }
 @media (max-width: 600px) {
   .panel {
-    width: 400px;
+    width: 500px;
   }
 }
 

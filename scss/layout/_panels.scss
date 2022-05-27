@@ -6,17 +6,20 @@
 }
 .ender {
   overscroll-behavior: none;
-  width: 400%;
+  width: 500%;
   
   display: flex;
   flex-wrap: nowrap;
+  @include index.mobile{
+    width: 600%;
+  }
  
 }
 .panel {
   will-change: transform;
   width: 100%;
    @include index.mobile{
-      width: 400px;
+      width: 500px;
   }
 }
 .pink{
