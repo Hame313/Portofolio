@@ -92,10 +92,14 @@
       right: 0%;
       padding: 0;
       margin: 0;
+      overflow-y: hidden;
+      overflow-x: hidden;
       @include index.mobile{
         @include index.align(default,column-reverse);
         justify-content: center;
         align-items: center;
+        overflow-y: hidden;
+        overflow-x: hidden;
       }
     }
 

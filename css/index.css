@@ -102,6 +102,17 @@ section {
   display: block;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
 body {
   line-height: 1;
   overscroll-behavior: none;
@@ -1563,6 +1574,8 @@ table {
   right: 0%;
   padding: 0;
   margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 @media (max-width: 600px) {
   .show {
@@ -1571,6 +1584,8 @@ table {
     justify-content: default;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -1874,22 +1889,29 @@ footer img:hover {
   will-change: transform, opacity;
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  overflow: hidden;
+}
+
 .ender {
-  overflow-y: hidden;
   overscroll-behavior: none;
-  width: 400%;
+  width: 600%;
   display: flex;
   flex-wrap: nowrap;
 }
 @media (max-width: 600px) {
   .ender {
-    width: 370%;
+    width: 600%;
   }
 }
 
 .panel {
   will-change: transform;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 @media (max-width: 600px) {
   .panel {

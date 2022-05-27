@@ -4,21 +4,28 @@
   visibility: hidden;
   will-change: transform, opacity;
 }
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    overflow:hidden;
+}
 .ender {
-    overflow-y: hidden;
+   
   overscroll-behavior: none;
-  width: 400%;
+  width: 600%;
   
   display: flex;
   flex-wrap: nowrap;
   @include index.mobile{
-    width: 370%;
+    width: 600%;
   }
  
 }
 .panel {
   will-change: transform;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
    @include index.mobile{
       width: 500px;
   }

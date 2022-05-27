@@ -101,11 +101,21 @@ nav,
 section {
     display: block;
 }
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
 
 body {
     line-height: 1;
     overscroll-behavior: none;
     overflow-x: hidden;
+    
      
     width: 100%;
     -webkit-box-sizing: border-box;
