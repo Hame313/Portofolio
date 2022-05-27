@@ -1606,6 +1606,16 @@ table {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em, 0, 1em, 0;
+    padding: 0;
+  }
+}
 .home .container .heading-info {
   display: flex;
   flex-direction: row;
@@ -1685,13 +1695,41 @@ footer .touch, footer .logo-info {
 footer .touch {
   background-color: #6F77F4;
 }
+@media (max-width: 600px) {
+  footer .touch {
+    font-size: 0.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media (max-width: 600px) {
+  footer .touch .p-3, footer .touch .p-1 {
+    padding: 0;
+  }
+}
 footer .logo-info {
   background-color: #FFD324;
+}
+@media (max-width: 600px) {
+  footer .logo-info {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer .social {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  footer .social img {
+    width: 1em;
+  }
 }
 footer img {
   margin: 1em;
@@ -1735,6 +1773,11 @@ footer img:hover {
   width: 50%;
   position: relative;
   z-index: 0;
+}
+@media (max-width: 600px) {
+  .info-projects .container-text .project-info .text-heading {
+    font-size: 3.5em;
+  }
 }
 .info-projects .container {
   position: relative;
@@ -1832,14 +1875,15 @@ footer img:hover {
 }
 
 .ender {
+  overflow-y: hidden;
   overscroll-behavior: none;
-  width: 500%;
+  width: 400%;
   display: flex;
   flex-wrap: nowrap;
 }
 @media (max-width: 600px) {
   .ender {
-    width: 600%;
+    width: 370%;
   }
 }
 

@@ -9,6 +9,13 @@
     background-color: #ff6666;
     .container{
         @include index.container;
+        @include index.mobile{
+            @include index.align(center,column);
+            align-items: center;
+            margin: 2em,0,1em,0;
+            padding: 0;
+            
+        }
         .heading-info{
             @include index.align(space-between,row);
              @include index.mobile{

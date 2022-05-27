@@ -29,6 +29,12 @@
             width: 50%;
             position: relative;
             z-index: 0;
+
+            .text-heading{
+                @include index.mobile{
+                    font-size: 3.5em;
+                }
+            }
         }
 
     }

@@ -5,13 +5,14 @@
   will-change: transform, opacity;
 }
 .ender {
+    overflow-y: hidden;
   overscroll-behavior: none;
-  width: 500%;
+  width: 400%;
   
   display: flex;
   flex-wrap: nowrap;
   @include index.mobile{
-    width: 600%;
+    width: 370%;
   }
  
 }

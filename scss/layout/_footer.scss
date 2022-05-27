@@ -11,12 +11,34 @@ footer{
  }
  .touch{
      background-color: #6F77F4;
+     @include index.mobile{
+         font-size: 0.6em;
+         @include index.align(center,column);
+         padding: 0;
+     }
+     .p-3,.p-1{
+         @include index.mobile{
+             padding: 0;
+         }
+     
+     }
  }
  .logo-info{
      background-color: index.$projects-color;
+     @include index.mobile{
+         padding: 0;
+         @include index.align(center,column);
+         align-items: center;
+     }
  }
  .social{
      @include index.align(center,row);
+     img{
+         @include index.mobile{
+             width: 1em;
+
+         }
+     }
  }
  img{
     margin: 1em;
