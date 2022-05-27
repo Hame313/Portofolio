@@ -1,42 +1,60 @@
 @use './abstracts/index.scss';
-
-.projects{
-
-    h2{
-        @include index.center;
-        font-size: 2em;
-        @include index.mobile{
-            font-size:1.5em;
-        }
-
-
-    }
-    .collection{
-    @include  index.align(center,row);
-    gap: 2em;
-    flex-wrap: wrap;
-
-    .pages{
-        @include index.align(center,row);
-        gap:2em;
-        @include index.mobile{
-            padding: 0;
-            flex-wrap: wrap;
-            .left,.right{
-                width: 100%;
-                img{
-                    width: 100%;
-                }
-            }
-            
-        }
+.info-projects{
+     @include index.align(default,row);
+    
+    .proj-image{
+        width: 30%;
+        position: relative;
+        
+        
         img{
-            width: 100%;
+         width: 50em;
+        position: absolute;
+        left: -40%;
+        z-index: 3;
+        top: 20%;
+        border-radius: 10px;
+        @include index.mobile{
+            display: none;
         }
-        .left,.right{
+        }
+    }
+    background-color: index.$projects-color;
+    .container-text{
+        @include index.align(flex-start,column);
+        justify-content: center;
+        line-break: strict;
+        
+        .project-info{
             width: 50%;
+            position: relative;
+            z-index: 0;
         }
 
     }
+    .container{
+        position: relative;
+        z-index: 0;
     }
+   
+    @include index.mobile{
+      @include index.align(default,row);
+      flex-wrap: wrap;  
+    }
+}
+.projects{
+     @include index.align(default,row);
+     flex-wrap: wrap;
+ 
+     .image-container{
+         @include index.image-container;
+         img{
+             opacity: 0;
+         }
+     }
+     .overlay-text{
+         position:absolute;
+         top: 50%;
+         left: 40%;
+     }
 }

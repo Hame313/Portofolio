@@ -1,7 +1,23 @@
 @use './abstracts/index.scss';
-.footer{
- @include index.center;
- 
+footer{
+ p{
+     font-size: 0.9em;
+ }
+ @include index.align(space-between,row);
+ .touch,.logo-info{
+     width: 50%;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
+ .touch{
+     background-color: #6F77F4;
+ }
+ .logo-info{
+     background-color: index.$projects-color;
+ }
+ .social{
+     @include index.align(center,row);
+ }
  img{
     margin: 1em;
     &:hover{

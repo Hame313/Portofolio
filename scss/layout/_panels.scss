@@ -1,0 +1,109 @@
+  @use './abstracts/index.scss';
+  .gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+.ender {
+  overscroll-behavior: none;
+  width: 400%;
+  
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+.panel {
+  will-change: transform;
+  width: 100%;
+   @include index.mobile{
+      width: 400px;
+  }
+}
+.pink{
+     @include index.align(center,column);
+     align-items: center;
+     background-color: index.$panel-pink;
+     .container{
+         @include index.align(center,row);
+         align-items: center;
+     }
+    }
+
+.addInfo{
+    .container{
+        background-color: index.$panel-blue;
+    }
+    .container-text{
+        @include index.align(default,row);
+        @include index.mobile{
+            max-width: 100%;
+            flex-wrap: wrap;
+            div{
+                padding: 0;
+                margin: 0;
+                img{
+                    max-width: 100%;
+                    width: 100%
+                }
+            }
+        }
+    }
+}
+.bg-white{
+    .container-text{
+
+        .work-experience{
+    @include index.align(default,row);
+    .work-box{
+        padding: 0.9em;
+        background-image: linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),
+                    linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),
+                    linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),
+                    linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),
+                    linear-gradient(white, white);
+        background-repeat: no-repeat;
+        background-size: 4px 50%, 50% 4px, 4px 50%, 50% 4px, calc(100% - 8px) calc(100% - 8px);
+        background-position: left bottom, left bottom, right top, right top, 4px 4px;
+        margin: 20px;
+        }
+        @include index.mobile{
+            flex-wrap: wrap;
+        }
+    }
+    .heading-info{
+        background-color: index.$projects-color;
+       
+        .text-heading{
+             @include index.mobile{
+            font-size: 3.3571428571em!important;
+        }
+        }
+    }
+
+}
+.touch{
+    
+    padding: 1em;
+    background-color: index.$menu-text-bg;
+    width: 50%;
+    @include index.align(default,row);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.logo-info{
+    @include index.align(center,column);
+    padding: 1em;
+    align-items: center;
+    background-color:index.$projects-color;
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+}
+.gradient-border {
+  background-image: linear-gradient(red, purple),
+                    linear-gradient(to right, purple, red),
+                    linear-gradient(to bottom, purple, red),
+                    linear-gradient(to left, purple, red),
+                    linear-gradient(steelblue, steelblue);
+}

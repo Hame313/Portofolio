@@ -1,0 +1,39 @@
+@use './abstracts/index.scss';
+
+.aboutMe{
+    @include index.align(default,row);
+    align-items: center;
+    .container{
+        padding: 0;
+        margin: 0;
+        background-color:index.$projects-color ;
+    }
+    .container-text{
+        @include index.align(center,column);
+        align-items: center;
+        line-break: strict;
+        .about-info{
+            width: 50%;
+        }
+
+    } 
+
+    @include index.mobile{
+        @include index.align(default,row);
+        flex-wrap: wrap;
+       .container-text{
+        .about-info{
+            width: 100%;
+        }
+    }
+        .text-heading{
+            font-size: 3em;
+        }
+        .text-center{
+            text-align: left;
+        }
+        p{
+            padding: 0;
+        }
+    }
+}

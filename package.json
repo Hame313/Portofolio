@@ -15,6 +15,10 @@
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
-    "gulp-webp": "^4.0.1"
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4"
   }
 }
