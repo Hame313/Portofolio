@@ -1891,6 +1891,7 @@ footer img:hover {
 
 .wrapper {
   overflow-x: hidden;
+  height: auto;
 }
 
 .ender {
