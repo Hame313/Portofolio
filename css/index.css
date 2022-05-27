@@ -1893,7 +1893,7 @@ footer img:hover {
   display: flex;
   flex-wrap: nowrap;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .ender {
