@@ -28,7 +28,7 @@
   visibility: hidden;
 }
 .panel {
-    border: 1px solid red;
+ 
   height: 100%;
   width: 100vw;
   img{
@@ -72,11 +72,16 @@
     }
 }
 .bg-white{
-    .container-text{
+    .container{
 
         .work-experience{
     @include index.align(default,row);
+    flex-wrap: wrap;
+    padding: 0.8em;
     .work-box{
+        width: 40%;
+        line-height:1.8;
+        
         padding: 0.9em;
         background-image: linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),
                     linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),
