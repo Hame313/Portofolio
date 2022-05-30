@@ -1915,7 +1915,6 @@ footer img:hover {
 .wrapper {
   overflow-x: hidden;
   overflow-y: hidden;
-  height: min-content;
   width: 600%;
 }
 
@@ -1951,8 +1950,6 @@ footer img:hover {
 @media (max-width: 600px) {
   .panel {
     height: 100%;
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -1993,6 +1990,11 @@ footer img:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .bg-white .container .text-heading {
+    font-size: 3em;
+  }
+}
 .bg-white .container .work-experience {
   display: flex;
   flex-direction: row;
@@ -2002,7 +2004,7 @@ footer img:hover {
 }
 .bg-white .container .work-experience .work-box {
   width: 40%;
-  line-height: 1.8;
+  line-height: 1.1;
   padding: 0.9em;
   background-image: linear-gradient(#ffdd57, #ffdd57), linear-gradient(#ffdd57, #ffdd57), linear-gradient(#ffdd57, #ffdd57), linear-gradient(#ffdd57, #ffdd57), linear-gradient(white, white);
   background-repeat: no-repeat;
@@ -2056,13 +2058,13 @@ footer img:hover {
 .contact {
   height: 100vh;
 }
-.contact input[type=submit] {
-  color: white;
-  background: #1d5eda;
-  border: 0px;
-}
 .contact .container-text {
   background-color: #1d5eda;
+}
+@media (max-width: 600px) {
+  .contact .container-text .text-heading {
+    font-size: 3em;
+  }
 }
 .contact .container {
   width: 85%;
@@ -2160,9 +2162,6 @@ footer img:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.contact .button:hover {
-  background: #FFD324;
-}
 @media (max-width: 950px) {
   .contact .container {
     width: 90%;
@@ -2194,5 +2193,18 @@ footer img:hover {
   .contact .container .content .right-side {
     width: 100%;
     margin-left: 0;
+  }
+}
+
+.somebtn {
+  color: white;
+  background: #1d5eda;
+  border: 0px;
+}
+@media (max-width: 600px) {
+  .somebtn {
+    color: white;
+    background: #1d5eda;
+    border: 0px;
   }
 }

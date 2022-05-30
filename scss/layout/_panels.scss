@@ -7,7 +7,7 @@
 .wrapper{
     overflow-x: hidden;
     overflow-y: hidden;
-    height:min-content;
+   
     width: 600%;
 }
 .pin-spacer{
@@ -28,7 +28,7 @@
   visibility: hidden;
 }
 .panel {
- 
+  
   height: 100%;
   width: 100vw;
   img{
@@ -37,8 +37,7 @@
   }
    @include index.mobile{
      height: 100%;
-     padding: 0;
-     margin: 0;
+    
   }
 }
 .pink{
@@ -73,6 +72,11 @@
 }
 .bg-white{
     .container{
+        @include index.mobile{
+            .text-heading{
+                font-size: 3em;
+            }
+        }
 
         .work-experience{
     @include index.align(default,row);
@@ -80,7 +84,7 @@
     padding: 0.8em;
     .work-box{
         width: 40%;
-        line-height:1.8;
+        line-height: 1.1;
         
         padding: 0.9em;
         background-image: linear-gradient(lighten(index.$projects-color,10), lighten(index.$projects-color,10)),

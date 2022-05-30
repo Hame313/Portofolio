@@ -3,15 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 .contact{
     height: 100vh;
-    input[type='submit']{
-        color: white;
-background: index.$panel-blue;
-border: 0px;
-
-    }
+   
 .container-text{
-    background-color:   index.$panel-blue;;
+    background-color:   index.$panel-blue;
+     @include index.mobile{
+            .text-heading{
+                font-size: 3em;
+            }
+        }
 }
+
 .container{
   width: 85%;
 
@@ -24,6 +25,7 @@ border: 0px;
   justify-content: space-between;
 }
 }
+
  
 .container .content .left-side{
   width: 25%;
@@ -109,10 +111,9 @@ border: 0px;
   background: index.$panel-blue;
   cursor: pointer;
   transition: all 0.3s ease;
+  
 }
-.button:hover{
-  background: index.$projects-color;
-}
+
 
 @media (max-width: 950px) {
   .container{
@@ -148,4 +149,17 @@ border: 0px;
  }
 }
 
+}
+
+.somebtn{
+  
+        color: white;
+background: index.$panel-blue;
+border: 0px;
+  @include index.mobile{
+    color: white;
+background: index.$panel-blue;
+border: 0px;
+}
+    
 }
