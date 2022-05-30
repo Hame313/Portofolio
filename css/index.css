@@ -1913,25 +1913,16 @@ footer img:hover {
 }
 
 .wrapper {
+  min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
-  width: 600%;
-}
-
-.pin-spacer {
-  height: 100%;
 }
 
 .ender {
-  overflow-x: hidden;
-  width: 600%;
+  width: 400%;
+  height: 100vh;
   display: flex;
   flex-wrap: nowrap;
-}
-@media (max-width: 600px) {
-  .ender {
-    width: 600%;
-  }
 }
 
 .proxy {
@@ -1940,8 +1931,8 @@ footer img:hover {
 }
 
 .panel {
-  height: 100%;
-  width: 100vw;
+  width: 100%;
+  will-change: transform;
 }
 .panel img {
   max-width: 100%;
@@ -1990,11 +1981,6 @@ footer img:hover {
   }
 }
 
-@media (max-width: 600px) {
-  .bg-white .container .text-heading {
-    font-size: 3em;
-  }
-}
 .bg-white .container .work-experience {
   display: flex;
   flex-direction: row;
