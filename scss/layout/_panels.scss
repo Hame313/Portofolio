@@ -6,9 +6,13 @@
 }
 .wrapper{
     overflow-x: hidden;
-    height: auto;
+    overflow-y: hidden;
+    height:min-content;
+    width: 600%;
 }
-
+.pin-spacer{
+    height: 100%;
+}
 .ender {
    overflow-x: hidden;
   width: 600%;
@@ -24,6 +28,7 @@
   visibility: hidden;
 }
 .panel {
+    border: 1px solid red;
   height: 100%;
   width: 100vw;
   img{
@@ -127,9 +132,5 @@
 .bg-blue{
     background-color: #113780;
 
-   @include index.mobile{
-       .half-img{
-        height: auto;
-       }
-   }
+ 
 }

@@ -83,7 +83,7 @@
                     <a class="menu-nav__link text-4  text-main proj_anim">Projects.</a>
                 </li>
                 <li class="menu-nav__item text-5 p-1 m-1 bRadius-1">
-                    <a class="menu-nav__link text-4  text-main contact_anim"></a>
+                    <a class="menu-nav__link text-4  text-main contact_anim">Contact</a>
                 </li>
 
             </ul>
@@ -302,56 +302,82 @@
                 </div>
             </section>
             <!-- <section class="panel bg-grey" id="contact">
-            <h1 class="text-main text-7 text-center">Hi it's me again</h1>
-            <img src="images/rebuildWordpress.png" alt="" srcset="">
-        </section>
-        <section class="panel bg-darkred">
-            <h1 class="text-main text-7 text-center">Hi it's me again</h1>
-            <img src="images/vipCatering.png" alt="" srcset="">
-        </section> -->
+                <h1 class="text-main text-7 text-center">Hi it's me again</h1>
+                <img src="images/rebuildWordpress.png" alt="" srcset="">
+            </section>
+            <section class="panel bg-darkred">
+                <h1 class="text-main text-7 text-center">Hi it's me again</h1>
+                <img src="images/vipCatering.png" alt="" srcset="">
+            </section> -->
 
         </div>
 
         <!-- ender -->
     </div>
     <div class="proxy"></div>
-    <!-- <section class="ml-4 ml-3 mr-3 mb-4" id="footer">
-
-        <footer class="text-black text-3 ">
-
-            <div class="touch disp-flex">
-                <div class="p-3">
-
-                    <h1 class="text-4 p-1 text-white weight-bolder">MB.</h1>
-                    <p class="text-white">Let's get creative</p>
-                    <p class="text-1  text-white">All rights reserved</p>
-                </div>
-                <div class="p-3">
-                    <h1 class="text-4 p-1 text-white">Tesanj</h1>
-                    <p class="  text-white">Bosna i Hercegovina
-                    </p>
-                    <p class="text-1  text-white">Novo mesto, Slovenija</p>
-                </div>
-                <div class="p-3">
-                    <h1 class="text-3 p-1 text-white ">Novo mesto</h1>
-                    <p class="  text-white ">Slovenija</p>
-                    <p class="text-1  text-white ">beganhame@gmail.com</p>
-                </div>
-            </div>
-            <div class="logo-info">
-                <h1 class="text-6 p-2 text-white text-center">MB.</h1>
-
-
-                <div class="social">
-                    <a href="https://github.com/Hame313/netflix" target="_blank"> <img
-                            src="https://img.icons8.com/ios-filled/50/ffffff/github.png" /> </a>
-                    <a href="https://www.linkedin.com/in/muhamed-b-048179116/"><img class="text-center"
-                            src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" /></a>
-                </div>
+    <section class="contact" id="contact">
+        <div class="container-text">
+            <div class="project-info p-4 m-4 gs_reveal">
+                <h1 class="gs_reveal_fromLeft  text-main text-start text-3 weight-bolder p-1">Contact me</h1>
+                <h1 class="gs_reveal_fromRight text-main text-start   text-heading weight-bolder p-1">Let's build
+                    something great
+                </h1>
+                <p class="gs_reveal_fromRight text-main text-start text-2 p-2">I create successful responsive websites
+                    that are fast, easy
+                    to use, and built with best practices. The main area of my
+                    expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom
+                    features,
+                    animations, and coding interactive layouts. </p>
             </div>
 
-        </footer>
-    </section> -->
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Surkhet, NP12</div>
+                        <div class="text-two">Birendranagar 06</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+0098 9893 5647</div>
+                        <div class="text-two">+0096 3434 5678</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">codinglab@gmail.com</div>
+                        <div class="text-two">info.codinglab@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p>If you have any work from me or any types of quries related to my tutorial, you can send me
+                        message from
+                        here. It's my pleasure to help you.</p>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box message-box">
+
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <script type="module" src="app.js"></script>
     <script>
         let image = document.querySelectorAll('.image-container');
@@ -387,6 +413,8 @@
         gsap.from(".log", { opacity: 0, duration: 1, y: -50 });
         gsap.from(".menu-btn__burger", { opacity: 0, duration: 1, y: -50 });
         gsap.from(".heading-links", { opacity: 0, duration: 1, y: -500 });
+
+
 
         let btnDown = document.querySelector(".down-arrow");
         let btnAboutLink = document.querySelector(".about_anim");
