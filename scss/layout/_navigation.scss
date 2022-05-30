@@ -60,7 +60,13 @@
   .block-info{
       @include index.align(center,column);
       @include index.mobile{
+        padding: 0;
+        margin: 0;
         width:25em;
+        img{
+          max-width: 100%;
+          width: 100%;
+        }
       }
     }
     @include index.mobile{
@@ -81,6 +87,12 @@
     .logo-info{
       @include index.align(center,column);
       align-items:center;
+      @include index.mobile{
+        img{
+          width: 35px;
+          height: 35px;
+        }
+      }
     }
   }
   

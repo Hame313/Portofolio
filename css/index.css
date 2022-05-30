@@ -1535,7 +1535,13 @@ table {
 }
 @media (max-width: 600px) {
   .showpage .information .block-info {
+    padding: 0;
+    margin: 0;
     width: 25em;
+  }
+  .showpage .information .block-info img {
+    max-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
@@ -1563,6 +1569,12 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .showpage .text-info .logo-info img {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .show {
