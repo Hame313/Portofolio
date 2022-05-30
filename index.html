@@ -496,10 +496,14 @@
         })[0];
 
         if (screen.availWidth < 600) {
-            console.log('its lower');
+            let text = document.querySelectorAll('.image-container');
             let image = document.querySelectorAll('.img-hover');
             image.forEach((element) => {
                 element.firstElementChild.style.opacity = 0.9;
+            });
+            text.forEach((element) => {
+                console.log(element.firstElementChild)
+                element.firstElementChild.style.opacity = 0;
             })
         }
     </script>
