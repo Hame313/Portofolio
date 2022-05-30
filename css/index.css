@@ -2056,6 +2056,11 @@ footer img:hover {
 .contact {
   height: 100vh;
 }
+.contact input[type=submit] {
+  color: white;
+  background: #1d5eda;
+  border: 0px;
+}
 .contact .container-text {
   background-color: #1d5eda;
 }
@@ -2088,7 +2093,7 @@ footer img:hover {
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
-  background: #afafb6;
+  background: #1d5eda;
 }
 .contact .content .left-side .details {
   margin: 14px;
@@ -2096,7 +2101,7 @@ footer img:hover {
 }
 .contact .content .left-side .details i {
   font-size: 30px;
-  color: #3e2093;
+  color: #1d5eda;
   margin-bottom: 10px;
 }
 .contact .content .left-side .details .topic {
@@ -2144,19 +2149,19 @@ footer img:hover {
   display: inline-block;
   margin-top: 12px;
 }
-.contact .right-side .button input[type=button] {
+.contact .right-side .button {
   color: #fff;
   font-size: 18px;
   outline: none;
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: #1d5eda;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.contact .button input[type=button]:hover {
-  background: #5029bc;
+.contact .button:hover {
+  background: #FFD324;
 }
 @media (max-width: 950px) {
   .contact .container {
