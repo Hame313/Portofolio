@@ -1912,9 +1912,21 @@ footer img:hover {
 }
 
 .panel {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
+.panel img {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 600px) {
+  .panel {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .pink {
   display: flex;
   flex-direction: column;
