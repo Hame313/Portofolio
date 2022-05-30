@@ -1603,14 +1603,11 @@ table {
 
 .half-img {
   max-width: 100%;
-  width: 100%;
   height: 100%;
 }
 @media (max-width: 600px) {
   .half-img {
     max-width: 100%;
-    width: 100%;
-    height: 100%;
   }
 }
 
@@ -2038,4 +2035,13 @@ footer img:hover {
 
 .gradient-border {
   background-image: linear-gradient(red, purple), linear-gradient(to right, purple, red), linear-gradient(to bottom, purple, red), linear-gradient(to left, purple, red), linear-gradient(steelblue, steelblue);
+}
+
+.bg-blue {
+  background-color: #113780;
+}
+@media (max-width: 600px) {
+  .bg-blue .half-img {
+    height: auto;
+  }
 }

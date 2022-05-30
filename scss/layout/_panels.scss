@@ -124,3 +124,12 @@
                     linear-gradient(to left, purple, red),
                     linear-gradient(steelblue, steelblue);
 }
+.bg-blue{
+    background-color: #113780;
+
+   @include index.mobile{
+       .half-img{
+        height: auto;
+       }
+   }
+}
